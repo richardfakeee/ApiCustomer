@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: api-customer
+  config:
+    import: 'configserver:'
+  cloud:
+    bootstrap:
+      enabled: true
+    config:
+      enabled: true
+      uri: http://localhost:8070
